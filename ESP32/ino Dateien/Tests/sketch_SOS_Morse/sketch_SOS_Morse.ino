@@ -1,3 +1,11 @@
+  const int dotLength = 150; // in Milliseconds
+  const int dashLength = dotLength * 3;
+  const int letterPause = dotLength;
+  const int wordPause = dotLength * 3;
+ // const int dashLength = dotLength * 5;
+ // const int letterPause = dotLength * 3;
+ // const int wordPause = dotLength * 7;
+
 void setup() {
   // put your setup code here, to run once:
   
@@ -9,25 +17,27 @@ void loop() {
   shortBeep();
   shortBeep();
   shortBeep();
+  delay(letterPause);
   longBeep();
   longBeep();
   longBeep();
+  delay(letterPause);
   shortBeep();
   shortBeep();
   shortBeep();
-  delay(1000);
+  delay(wordPause);
 }
 
 void shortBeep(void) {
   digitalWrite(22, HIGH);
-  delay(250);
+  delay(dotLength);
   digitalWrite(22, LOW);
-  delay(250);
+  delay(dotLength);
 }
 
 void longBeep(void) {
   digitalWrite(22, HIGH);
-  delay(500);
+  delay(dashLength);
   digitalWrite(22, LOW);
-  delay(500);
+  delay(dashLength);
 }
