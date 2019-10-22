@@ -1,8 +1,7 @@
 void setup() {
   // put your setup code here, to run once:
   
-  pinMode(22, OUTPUT);
-  
+  pinMode(22, OUTPUT);  
 }
 
 void loop() {
@@ -18,8 +17,6 @@ void loop() {
   shortBeep();
   delay(1000);
 }
-
-
 
 void shortBeep(void) {
   digitalWrite(22, HIGH);
