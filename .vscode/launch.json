@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Snake",
+            "request": "launch",
+            "mainClass": "Snake"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hello",
             "request": "launch",
             "mainClass": "Hello"
