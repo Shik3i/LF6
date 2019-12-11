@@ -10,7 +10,8 @@ class Maximum {
             System.out.println("Bitte geben Sie Ihre nächste Zahl ein: ");
             numbers[i] = scanner.nextInt();
         }
-
+        scanner.close();
+        
         System.out.println("Die höchste Zahl ist: " + getMaximumNumberFromArray(numbers));
     }
 
