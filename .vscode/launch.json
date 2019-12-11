@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Rabattrechner",
+            "request": "launch",
+            "mainClass": "Rabattrechner",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ulraubsanspruch",
+            "request": "launch",
+            "mainClass": "Ulraubsanspruch",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Notenrechner",
             "request": "launch",
             "mainClass": "Notenrechner",
