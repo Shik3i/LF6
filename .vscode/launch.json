@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Kapitalverzinsung2",
+            "request": "launch",
+            "mainClass": "Kapitalverzinsung2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Fischteich",
             "request": "launch",
             "mainClass": "Fischteich"
