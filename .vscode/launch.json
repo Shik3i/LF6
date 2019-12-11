@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Kapitalverzinsung",
+            "request": "launch",
+            "mainClass": "Kapitalverzinsung"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Meldeamt",
             "request": "launch",
             "mainClass": "Meldeamt"
