@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Rechteck",
+            "request": "launch",
+            "mainClass": "Rechteck",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Versand",
             "request": "launch",
             "mainClass": "Versand",
