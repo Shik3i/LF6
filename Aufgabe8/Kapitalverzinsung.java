@@ -23,7 +23,7 @@ class Kapitalverzinsung{
         long nsBefore1 = System.nanoTime();
         double money = 1;
         int years = 0;
-        // da die Aufgabe die Überschrift "Schleifen" hat, gehe ich mal davon aus, das so etwas hier gemeint war
+        // "normaler" Weg mittels while schleife
         while (money < 2){
             money *= 1 + interest / 100;
             years++;
@@ -31,15 +31,15 @@ class Kapitalverzinsung{
         long nsAfter1 = System.nanoTime();
 
         // Allerdings könnte man auch die Zinseszinsformel (Kn = K0 * (1 + p/100)^n) umstellen nach n = log(Kn) / log(1 + p/100).
-        // Allerdings ist die berechnung des Logarithmusses so ineffizient, selbst in dieser Zeit des Niedrigszinses
-        // Die meiste Zeit geht für das Math.ceil drauf, (int) +0.5 geht sehr sehr viel schneller (.32 ms schneller)
+        // Allerdings ist die berechnung des Logarithmusses so ineffizient, selbst in dieser Zeit des Niedrigszinses ( ab ca 0.05% erst ein Vorteil)
+        // Die meiste Zeit ging für das Math.ceil drauf, "(int) + 0.5" geht sehr sehr viel schneller (~300.000 ns schneller)
         long nsBefore2 = System.nanoTime(); 
         years = (int) (Math.log(2) / Math.log(1 + interest / 100) + 0.5);
         long nsAfter2 = System.nanoTime();
 
         System.out.println("Der eingesetzte Geldbetrag hat sich nach " + years + " Jahren verdoppelt.");
-        System.out.println("Gewischwindigkeit Schleife: " + (nsAfter1 - nsBefore1) + " ns");
-        System.out.println("Geschwidnigkeit Logarithmus: " + (nsAfter2 - nsBefore2) + " ns");
+        System.out.println("Geschwindigkeit Schleife: " + (nsAfter1 - nsBefore1) + " ns");
+        System.out.println("Geschwindigkeit Logarithmus: " + (nsAfter2 - nsBefore2) + " ns");
 
         // Zeiten
         // Zinssatz |   Zeit While  | Zeit Log    | DIFF
