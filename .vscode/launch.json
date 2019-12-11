@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Zahlenraten",
+            "request": "launch",
+            "mainClass": "Zahlenraten"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Kapitalverzinsung",
             "request": "launch",
             "mainClass": "Kapitalverzinsung"
