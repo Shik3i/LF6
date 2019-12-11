@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Median",
+            "request": "launch",
+            "mainClass": "Median"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Notenrechner2",
             "request": "launch",
             "mainClass": "Notenrechner2"
