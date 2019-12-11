@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Notenrechner{
+class Notenrechner2{
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
