@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Maximum",
+            "request": "launch",
+            "mainClass": "Maximum",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Rabattrechner",
             "request": "launch",
             "mainClass": "Rabattrechner",
