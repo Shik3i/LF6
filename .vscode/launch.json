@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Fischteich",
+            "request": "launch",
+            "mainClass": "Fischteich"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Zahlenraten",
             "request": "launch",
             "mainClass": "Zahlenraten"
