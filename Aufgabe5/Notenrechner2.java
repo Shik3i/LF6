@@ -6,7 +6,7 @@ class Notenrechner2{
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Geben Sie die maximal zu erreichende Punktzahl ein: ");
-        int max = scanner.nextInt();
+        double max = scanner.nextInt();
 
         System.out.println("Geben Sie die erreichten Punkte ein: ");
         int scored = scanner.nextInt();
