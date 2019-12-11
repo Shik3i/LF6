@@ -16,6 +16,7 @@ class DateCheck{
         // Das Jahr sollte immer valid sein
         System.out.println("Bitte Jahr eingeben: ");
         int year = scanner.nextInt();
+        scanner.close();
 
         boolean isValid = true;
         // Schaltjahr prüfung
