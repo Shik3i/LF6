@@ -17,7 +17,7 @@ class Median{
         // Sortieren mit bubblesort, zwar langsam(O(n²)) aber am einfachsten/schnellsten zu implementieren/erklären
         numbers = bubblesort(numbers);
 
-        // für jede ungerade Anzahl an Zahlen "n" ist der Median immer bei n / 2
+        // für jede ungerade Anzahl an sortierten Zahlen "n" ist der Median immer bei n / 2
         System.out.println("Median: " + numbers[n / 2]);
     }
 
@@ -29,7 +29,6 @@ class Median{
 					numbers[j] = numbers[j+1];
 					numbers[j+1] = temp;
 				}
-				
 			}
 		}
         return numbers;
