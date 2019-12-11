@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Blutalkohol",
+            "request": "launch",
+            "mainClass": "Blutalkohol"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Kapitalverzinsung2",
             "request": "launch",
             "mainClass": "Kapitalverzinsung2"
