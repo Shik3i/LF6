@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Notenrechner",
+            "request": "launch",
+            "mainClass": "Notenrechner",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Snake",
             "request": "launch",
             "mainClass": "Snake"
