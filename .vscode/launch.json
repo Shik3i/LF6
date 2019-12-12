@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StringEcho",
+            "request": "launch",
+            "mainClass": "StringEcho"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringZeilen",
+            "request": "launch",
+            "mainClass": "StringZeilen"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Blutalkohol",
             "request": "launch",
             "mainClass": "Blutalkohol"
