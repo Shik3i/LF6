@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Noten",
+            "request": "launch",
+            "mainClass": "Noten"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StringEcho",
             "request": "launch",
             "mainClass": "StringEcho"
