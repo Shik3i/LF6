@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Astrologe",
+            "request": "launch",
+            "mainClass": "Astrologe"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ScannerKassen",
             "request": "launch",
             "mainClass": "ScannerKassen"
