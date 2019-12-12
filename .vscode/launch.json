@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ScannerKassen",
+            "request": "launch",
+            "mainClass": "ScannerKassen"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Noten",
             "request": "launch",
             "mainClass": "Noten"
