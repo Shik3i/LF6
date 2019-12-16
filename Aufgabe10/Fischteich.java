@@ -19,6 +19,11 @@ class Fischteich{
         while (fish >= goal){
             // Laut dem Beispielbild erst 22% abziehen, dann die neuen Fische dazu adddieren.
             System.out.println(String.format("Woche %d: %.0f", ++weeks, fish = fish * 0.78 +  newcomers));
+            // Vorbeugung endlosschleife
+            if (weeks > 50){
+                System.out.println(String.format("Maximale Wochen erreicht!"));
+                break;
+            }
         }
     }
 }
