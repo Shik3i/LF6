@@ -59,8 +59,4 @@ class Meldeamt {
 
         return "Ihr Berater ist " + clerk + ", Zimmer " + roomNo + ".";
     }
-
-
-
-
 }
