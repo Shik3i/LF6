@@ -36,25 +36,51 @@ class Rechteck{
         // Alle Rechtecke durchgehen und Ihre Seitenlängen, Fläche, Umfang, Diagonale ausgeben
         for (Rectangle rec : rectangles) {
             System.out.println("\n" + ++i + ". Rechteck");
-            System.out.println(rec.getA());
-            System.out.println(rec.getB());
+            System.out.println(rec.getAAsText());
+            System.out.println(rec.getBAsText());
             // Fläche
             if (mode == 1 || mode == 4) {
-                System.out.println(rec.getArea());
+                System.out.println(rec.getAreaAsText());
             }
             // Umfang
             if (mode == 2 || mode == 4) {
-                System.out.println(rec.getCircumference());
+                System.out.println(rec.getCircumferenceAsText());
             }
             // Diagonale
             if (mode == 3 || mode == 4) {
-                System.out.println(rec.getC());
-            }  
+                System.out.println(rec.getCAsText());
+            }
         }
+
+        testRectangle();
+    }
+
+    public static void testRectangle() {
+        System.out.println();
+        System.out.println("UnitTests:");
+        Rectangle tester = new Rectangle(2, 2);
+        testCompareInt(4, tester.getArea(), "Area must be 4.");
+        testCompareInt(8, tester.getCircumference(), "Circumference must be 8");
+        testCompareDouble(Math.pow(8, 0.5), tester.getC(), 0.00001, "C must be " + Math.pow(8, 0.5));
+    }
+
+    public static void testCompareInt(int a, int b, String errorMessage) {
+        if (a == b)
+            System.out.println("Test passed");
+        else
+            System.out.println("Test failed: " + errorMessage);
+    }
+
+    public static void testCompareDouble(double a, double b, double delta, String errorMessage) {
+        if (a <= b + delta 
+            || a >= b - delta)
+            System.out.println("Test passed");
+        else
+            System.out.println("Test failed: " + errorMessage);
     }
 }
 
-class Rectangle{
+class Rectangle {
     private int a;
     private int b;
 
@@ -63,27 +89,47 @@ class Rectangle{
         this.b = b;
     }
 
-    public String getA() {
-        return "Seite A:\t" + a + " cm";
+    public int getA() {
+        return this.a;
     }
 
-    public String getB() {
-        return "Seite B:\t" + b + " cm";
+    public int getB() {
+        return this.b;
+    }
+
+    public String getAAsText() {
+        return "Seite A:\t" + this.a + " cm";
+    }
+
+    public String getBAsText() {
+        return "Seite B:\t" + this.b + " cm";
     }
 
     // Fläche
-    public String getArea( ){
-        return "Fläche:\t\t" + this.a * this.b + " cm^2";
+    public int getArea(){
+        return this.a * this.b;
+    }
+
+    public String getAreaAsText(){
+        return "Fläche:\t\t" + this.getArea() + " cm^2";
     }
 
     // Umfang
-    public String getCircumference() {
-        // Anscheinend muss man das echt Klammern, sonst kommt bei 10+20 1020 raus...
-        return "Umfang:\t\t" + (2 * this.a + 2 * this.b) + " cm";
+    public int getCircumference() {
+        return 2 * this.a + 2 * this.b;
     }
+
+    public String getCircumferenceAsText() {
+        return "Umfang:\t\t" + this.getCircumference() + " cm";
+    }
+
     // Diagonale
-    public String getC() {
+    public double getC() {
         // c = sqrt(a² + b²)
-        return String.format("Diagonale C:\t%.2f cm",Math.pow(Math.pow(this.a, 2) + Math.pow(this.b, 2), 0.5));
+        return Math.pow(Math.pow(this.a, 2) + Math.pow(this.b, 2), 0.5);
+    }
+
+    public String getCAsText() {
+        return String.format("Diagonale C:\t%.2f cm", this.getC());
     }
 }

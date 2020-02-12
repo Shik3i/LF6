@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UnitTester",
+            "request": "launch",
+            "mainClass": "UnitTester",
+            "projectName": "LF6_6213e55a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Astrologe",
             "request": "launch",
             "mainClass": "Astrologe"
