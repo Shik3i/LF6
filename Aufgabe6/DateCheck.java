@@ -6,7 +6,6 @@ class DateCheck{
     public static void main(String[] args){
         int[] daysInMonth = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         Scanner scanner = new Scanner(System.in);
-        
         System.out.println("Bitte Tag eingeben: ");
         int day = scanner.nextInt();
 
